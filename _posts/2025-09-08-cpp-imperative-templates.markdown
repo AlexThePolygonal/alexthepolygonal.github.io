@@ -42,7 +42,7 @@ or
 clang++ -std=c++20 -O0 main.cpp -o a.out
 ```
 
-No complex build system is required, as the library is header-only. I have tested this code with gcc 15.1.1, 14.2.0, 13.3.0 and clang 19.1.1, 18.1.3, 16.0.6 and 15.0.7, and the library behaves the same way across different versions of the same compiler.
+No complex build system is required, as the library is header-only. I have tested this code with gcc 15.1.1, 14.2.0, 13.3.0 and clang 19.1.1, 18.1.3, 16.0.6 and 15.0.7, and the library behaves the same way across different versions of the same compiler, except that some earlier versions of Clang crash unpredictably.
 
 ## Public interface & semantics
 
