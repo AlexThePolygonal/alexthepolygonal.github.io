@@ -2,7 +2,7 @@
 layout: post
 title:  "Emulating an Imperative Language with C++ Templates!"
 date:   2025-09-08 00:25:07 +0200
-categories: programming, cpp
+categories: programming
 ---
 
 # Introduction
