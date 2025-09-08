@@ -22,7 +22,9 @@ static_assert(next<>::value == 2);
 static_assert(next<>::value == 3);
 ```
 
-Much more is possible. Inspired by older blog posts, I show how to expand this trick to emulate a rudimentary dynamically typed language with C++ template metaprogramming. The syntax is rather unorthodox. We implement conditionals and loops, and leave lists and dicts as an exercise. The statefulness implementation uses friend injection, a well-established trick, which I will explain in the [section on implementation details](#implementation-details).
+Much more is possible. Inspired by older blog posts, I show how to expand this trick to emulate a rudimentary dynamically typed language with C++ template metaprogramming. The library is available on [GitHub](https://github.com/AlexThePolygonal/cpp-stateful-templates).
+
+The syntax is rather unorthodox. We implement conditionals and loops, and leave lists and dicts as an exercise. The statefulness implementation uses friend injection, a well-established trick, which I will explain in the [section on implementation details](#implementation-details).
 
 Obviously, **do not use this code in production, ever**! However, you can use it for research, or for compiler stress-tests. It allows us to observe how compilers sequence template instantiation and opens a fascinating whole new class of UB. I suspect that we can observe unintended behaviour in Clang that way, but due to the overwhelming amount of UB I can't be sure.
 
