@@ -48,7 +48,7 @@ No complex build system is required, as the library is header-only. I have teste
 
 The way that the language works can be seen in the [tests.hpp](https://github.com/AlexThePolygonal/cpp-stateful-templates/blob/master/tests.hpp) file. Because the library is compile-time, the tests go into header files.
 
-### namespace ```type_var``
+### namespace ```type_var```
 
 The primitive stateful operations are defined in `type_var`.
 
